@@ -39,11 +39,12 @@ const GetProducts = () => {
     } catch(error){
       setLoading("")
       setError(error.message)
+      
     }
     
   }
-  // end of function where we call useEffect
 
+  // useEffect to call the function immediately the page loads
   useEffect(()=>{
     fetchProducts()
   },[])
@@ -61,7 +62,7 @@ const GetProducts = () => {
       <p  className='text-info'>{loading}</p>
       <p  className='text-danger'>{error}</p>
 
-          <h1 className='text-start' style={{ textDecoration: 'overline' }}>Fruits</h1>
+        <h1 className='text-start' style={{ textDecoration: 'overline' }}>Fruits</h1>
 
       {/* calling .map and filter to iterate/loop through each item */}
 
