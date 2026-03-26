@@ -58,5 +58,5 @@
 /* applied shadow and slightly lift on hover */
 .custom-card:hover {
   transform: translateY(-3px); /* Lifts the card slightly */
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* Bootstrap-style large shadow */
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175); /* Adds a subtle shadow on hover*/
 }
