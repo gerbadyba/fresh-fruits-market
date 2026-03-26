@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   font-family:sans-serif;
-
 }
 
 .App-logo {
@@ -45,8 +44,20 @@
   object-fit:contain;
 }
 
-.product_img:hover{
+/* .product_img:hover{
   transform: scale(1.2);
   transition: 3s;
+} */
+
+/* Remove default shadow and add transition */
+.custom-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none; /* Optional: cleaner look */
 }
 
+/* Apply shadow and slight lift on hover */
+.custom-card:hover {
+  transform: translateY(-3px); /* Lifts the card slightly */
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* Bootstrap-style large shadow */
+}

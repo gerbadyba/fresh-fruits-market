@@ -40,6 +40,7 @@ const GetProducts = () => {
       setLoading("")
       setError(error.message)
     }
+    
   }
   // end of function where we call useEffect
 
@@ -70,9 +71,11 @@ const GetProducts = () => {
       .map((product) =>(
           // fruits UI
 
-      <div  className='justify-content-center col-md-3'>
+      <div  className='justify-content-center col-md-3  mb-4 ' key={product.id}>
+        
+        {/* added 'custom-card' and removed 'shadow'*/}
 
-        <div  className='card shadow m-2'>
+        <div  className='card custom-card m-2'>
 
           <div  className='card-body p-1'>
 
